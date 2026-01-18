@@ -23,6 +23,7 @@ if st.button("Generate Itinerary"):
         itinerary = generate_itinerary(
             destination, days, budget, travel_type
         )
+       st.write(itinerary) 
         summary = summarize_itinerary(itinerary)
 
     st.subheader("Detailed Itinerary")
